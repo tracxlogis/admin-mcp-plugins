@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "txadmin": {
+      "type": "http",
+      "url": "https://admin-react.tracxlogis.com/api/mcp"
+    }
+  }
+}

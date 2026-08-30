@@ -1,0 +1,19 @@
+{
+  "name": "tx-admin-mcp-marketplace",
+  "owner": {
+    "name": "TX Platform Team"
+  },
+  "metadata": {
+    "description": "TX 운영 어드민 MCP 연결과 업무 스킬(정산·지급·KCI·HR·권한·시스템 운영·배송비 정책)을 배포하는 사내 플러그인 카탈로그",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "txadmin",
+      "source": "./plugins/txadmin",
+      "description": "TX Admin MCP 서버 연결 + 운영 업무 스킬 10종(정산·COD·지급요청·증빙매칭·KCI·HR·권한·시스템 모니터링·배송비 정책·거래처)",
+      "version": "0.1.0",
+      "category": "operations"
+    }
+  ]
+}

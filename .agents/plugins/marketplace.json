@@ -1,0 +1,17 @@
+{
+  "name": "tx-admin-mcp-marketplace",
+  "interface": {
+    "displayName": "TX Admin Plugins"
+  },
+  "plugins": [
+    {
+      "name": "txadmin",
+      "source": { "source": "local", "path": "./plugins/txadmin" },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Operations"
+    }
+  ]
+}
