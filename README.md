@@ -28,7 +28,7 @@ TX 운영 어드민을 AI 어시스턴트에 연결하는 **사내용** 플러�
 
 ```
 codex plugin marketplace add https://gitlab.qxpress.net/qlps/tx-admin-mcp-plugins.git
-codex plugin install txadmin@tx-admin-mcp-marketplace
+codex plugin add txadmin@tx-admin-mcp-marketplace
 ```
 
 ### 데스크톱 앱
@@ -103,7 +103,7 @@ Codex CLI:
 
 ```
 codex plugin marketplace add https://gitlab.qxpress.net/qlps/tx-admin-mcp-plugins.git
-codex plugin install txadmin@tx-admin-mcp-marketplace
+codex plugin add txadmin@tx-admin-mcp-marketplace
 ```
 
 For the desktop apps, add the same repository URL from **Settings → Plugins → Add → Add from

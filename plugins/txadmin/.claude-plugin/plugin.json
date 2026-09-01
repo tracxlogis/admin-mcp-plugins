@@ -1,6 +1,6 @@
 {
   "name": "txadmin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TX 운영 어드민 업무 플러그인 — 어드민 MCP 서버 연결(OAuth 2.1 / 개인 API 키)과 정산·COD·지급요청·증빙 매칭·KCI·HR·권한·시스템 모니터링·배송비 정책·거래처 스킬을 제공한다.",
   "author": {
     "name": "TX Platform Team"
