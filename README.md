@@ -13,9 +13,8 @@ TX 운영 어드민을 AI 어시스턴트에 연결하는 **사내용** 플러�
 
 - **TX 관리자 계정** (평소 admin 에 로그인하는 그 계정)
 - **사내망 접근** — 운영 MCP 는 사내 도메인이라 회사망 또는 VPN 이 필요합니다.
-- **GitHub 계정** — 마켓플레이스는 GitHub 비공개 저장소 `tracxlogis/admin-mcp-plugins`(표준 `owner/repo` 표기)로
-  배포합니다. 저장소 접근 권한이 있는 계정으로 `gh auth login` 등 Git 자격증명을 준비합니다. 마켓플레이스
-  등록·플러그인 설치 자체는 인터넷만 있으면 됩니다.
+- **GitHub 접근** — 마켓플레이스는 GitHub 공개 저장소 `tracxlogis/admin-mcp-plugins`(표준 `owner/repo` 표기)로
+  배포합니다. GitHub 계정이나 별도 인증 없이 인터넷만 있으면 등록·설치할 수 있습니다.
 - 클라이언트 중 하나: Claude Code, Codex CLI, Claude 데스크톱 앱, ChatGPT 데스크톱 앱
 
 ## 설치
@@ -91,9 +90,9 @@ status"*, *"Summarize this month's payment requests by status"*
 - A **TX admin account** — the one you normally use to sign in to admin.
 - **Internal network access** — the production MCP server is on an internal domain, so you need the
   office network or VPN.
-- **A GitHub account** — the marketplace is distributed from the private GitHub repository
-  `tracxlogis/admin-mcp-plugins` (standard `owner/repo` form). Sign in with an account that can access it
-  (for example `gh auth login`); registering the marketplace and installing the plugin only need the internet.
+- **GitHub access** — the marketplace is distributed from the public GitHub repository
+  `tracxlogis/admin-mcp-plugins` (standard `owner/repo` form). Registering and installing need only an
+  internet connection; no GitHub account or extra authentication is required.
 - One of these clients: Claude Code, Codex CLI, Claude desktop app, ChatGPT desktop app.
 
 ### Install
