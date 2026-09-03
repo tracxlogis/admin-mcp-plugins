@@ -13,6 +13,9 @@ TX 운영 어드민을 AI 어시스턴트에 연결하는 **사내용** 플러�
 
 - **TX 관리자 계정** (평소 admin 에 로그인하는 그 계정)
 - **사내망 접근** — 운영 MCP 는 사내 도메인이라 회사망 또는 VPN 이 필요합니다.
+- **GitHub 계정** — 마켓플레이스는 GitHub 비공개 저장소 `tracxlogis/admin-mcp-plugins`(표준 `owner/repo` 표기)로
+  배포합니다. 저장소 접근 권한이 있는 계정으로 `gh auth login` 등 Git 자격증명을 준비합니다. 마켓플레이스
+  등록·플러그인 설치 자체는 인터넷만 있으면 됩니다.
 - 클라이언트 중 하나: Claude Code, Codex CLI, Claude 데스크톱 앱, ChatGPT 데스크톱 앱
 
 ## 설치
@@ -20,21 +23,21 @@ TX 운영 어드민을 AI 어시스턴트에 연결하는 **사내용** 플러�
 ### Claude Code
 
 ```
-/plugin marketplace add https://gitlab.qxpress.net/qlps/tx-admin-mcp-plugins.git
+/plugin marketplace add tracxlogis/admin-mcp-plugins
 /plugin install txadmin@tx-admin-mcp-marketplace
 ```
 
 ### Codex CLI
 
 ```
-codex plugin marketplace add https://gitlab.qxpress.net/qlps/tx-admin-mcp-plugins.git
+codex plugin marketplace add tracxlogis/admin-mcp-plugins
 codex plugin add txadmin@tx-admin-mcp-marketplace
 ```
 
 ### 데스크톱 앱
 
 Claude 데스크톱 앱은 **설정 → 플러그인 → 추가 → 저장소에서 추가**, ChatGPT 데스크톱 앱은
-**플러그인 → 추가 → 플러그인 마켓플레이스 추가** 에서 위 저장소 주소를 넣습니다.
+**플러그인 → 추가 → 플러그인 마켓플레이스 추가** 에서 `tracxlogis/admin-mcp-plugins` 를 넣습니다.
 
 ## 인증
 
@@ -88,6 +91,9 @@ status"*, *"Summarize this month's payment requests by status"*
 - A **TX admin account** — the one you normally use to sign in to admin.
 - **Internal network access** — the production MCP server is on an internal domain, so you need the
   office network or VPN.
+- **A GitHub account** — the marketplace is distributed from the private GitHub repository
+  `tracxlogis/admin-mcp-plugins` (standard `owner/repo` form). Sign in with an account that can access it
+  (for example `gh auth login`); registering the marketplace and installing the plugin only need the internet.
 - One of these clients: Claude Code, Codex CLI, Claude desktop app, ChatGPT desktop app.
 
 ### Install
@@ -95,18 +101,18 @@ status"*, *"Summarize this month's payment requests by status"*
 Claude Code:
 
 ```
-/plugin marketplace add https://gitlab.qxpress.net/qlps/tx-admin-mcp-plugins.git
+/plugin marketplace add tracxlogis/admin-mcp-plugins
 /plugin install txadmin@tx-admin-mcp-marketplace
 ```
 
 Codex CLI:
 
 ```
-codex plugin marketplace add https://gitlab.qxpress.net/qlps/tx-admin-mcp-plugins.git
+codex plugin marketplace add tracxlogis/admin-mcp-plugins
 codex plugin add txadmin@tx-admin-mcp-marketplace
 ```
 
-For the desktop apps, add the same repository URL from **Settings → Plugins → Add → Add from
+For the desktop apps, enter `tracxlogis/admin-mcp-plugins` as the repository from **Settings → Plugins → Add → Add from
 repository** (Claude) or **Plugins → Add → Add plugin marketplace** (ChatGPT).
 
 ### Authentication
